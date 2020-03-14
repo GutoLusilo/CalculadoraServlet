@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <title>Calculadora</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="calculator">
+      
+      <h1>Calculadora</h1>
+      
+      <form 
+        name="myForm" 
+        action="http://localhost:8080/Desafio02_Calculadora/CalculadoraServlet" 
+        method="GET">
+        
+        <span for="num1">Digite o primeiro número:</span>
+        <input type="number" name="num1">
+        
+        <span for="num2">Digite o segundo número:</span>
+        <input type="number" name="num2">
+
+        <span for="operator">Escolha a operação:</span>
+        <input list="operators" name="operator">
+
+        <datalist id="operators">
+          <option value="+">
+          <option value="-">
+          <option value="*">
+          <option value="/">
+        </datalist>
+
+        <button type="submit">Calcular</button>
+      </form>
+
+    </div>
+  </div>
+
+<script type="text/javascript" src="./scripts.js"></script>
+</body>
+</html>
